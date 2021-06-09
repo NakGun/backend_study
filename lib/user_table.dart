@@ -14,7 +14,7 @@ class UserTable{
   Future<dynamic> getUser() async {
 
     response = await dio.get('$URL/search.php');
-
+    print('>>>>>>>>>>>>>>>>>>>>>>${response.data}');
     List<dynamic> users = jsonDecode(response.data);
     _usersController.setUsers(users);
 

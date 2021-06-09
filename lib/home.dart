@@ -49,7 +49,7 @@ class Home extends StatelessWidget {
               }
           );
         }else{
-          return CircularProgressIndicator();
+          return Container();
         }
 
       }),
